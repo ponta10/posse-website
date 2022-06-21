@@ -1,0 +1,51 @@
+body {
+     font-family: "Noto Sans JP", sans-serif;
+   }
+
+li{
+     list-style: none;
+}
+a{
+     text-decoration: none;
+     color: #000;
+}
+
+@import "parts/header";
+@import "parts/hero";
+@import "parts/main";
+@import "parts/footer";
+
+
+.fixed{
+     position: fixed;
+     bottom: 16px;
+     right: 16px;
+     background-color: #5FDF5B;
+     padding: 20px;
+     border-radius: 16px;
+     &_text{
+          color: #fff;
+          font-size: 14px;
+          padding: 0 70px;
+          background-image: url(../img/LINE_Brand_icon.png);
+          background-position: left 20px center;
+          background-size: 36px 36px;
+          background-repeat: no-repeat;
+          &::before {
+               content: "";
+               display: block;
+               width: 20px;
+               height: 20px;
+               position: absolute;
+               right: 20px;
+               // top: 50%;と、transform: translateY(-50%) で上下中央に配置
+               top: 50%;
+               transform: translateY(-50%);
+               background-image: url(../img/linkwhite.png);
+               background-size: contain;
+               background-position: center;
+               background-repeat: no-repeat;
+             }
+     }
+}
+

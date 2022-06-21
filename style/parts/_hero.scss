@@ -1,0 +1,29 @@
+.hero{
+     position: relative;
+     &-body{
+          position: absolute;
+          top: 50%;
+          left: 12%;
+          transform: translateY(-50%);
+          background: #EFF2F5;
+          border-radius: 24px;
+          padding: 48px;
+          &_title{
+               color:#0071BC;
+               font-weight: 600;
+          }
+          &_text{
+               font-size: 60px;
+               font-weight: 800;
+               padding-top: 12px;
+          }
+     }
+     &-img{
+          text-align: right;
+          & img{
+               border-bottom-left-radius: 80px;
+               border-top-left-radius: 80px;
+               width: 65%;
+          }
+     }
+}
