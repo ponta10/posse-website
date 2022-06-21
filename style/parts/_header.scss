@@ -1,5 +1,11 @@
 header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 95%;
      padding: 36px;
+     z-index: 2;
+     background-color: #fff;
      .header-items{
           display: flex;
           justify-content: space-between;

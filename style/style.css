@@ -12,7 +12,13 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
   padding: 36px;
+  z-index: 2;
+  background-color: #fff;
 }
 
 header .header-items {
@@ -46,6 +52,7 @@ header .header-items_navigation img {
 
 .hero {
   position: relative;
+  margin-top: 120px;
 }
 
 .hero-body {
@@ -166,41 +173,6 @@ header .header-items_navigation img {
   background-repeat: no-repeat;
 }
 
-.fixed {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  background-color: #5FDF5B;
-  padding: 20px;
-  border-radius: 16px;
-}
-
-.fixed_text {
-  color: #fff;
-  font-size: 14px;
-  padding: 0 70px;
-  background-image: url(../img/LINE_Brand_icon.png);
-  background-position: left 20px center;
-  background-size: 36px 36px;
-  background-repeat: no-repeat;
-}
-
-.fixed_text::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-image: url(../img/linkwhite.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 footer .footer-container {
   border-top: #EEEEEE solid 1px;
   text-align: center;
@@ -240,5 +212,40 @@ footer .footer-copyright {
   text-align: center;
   padding: 40px;
   border-top: #EEEEEE solid 1px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #5FDF5B;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.fixed_text {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 70px;
+  background-image: url(../img/LINE_Brand_icon.png);
+  background-position: left 20px center;
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+}
+
+.fixed_text::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../img/linkwhite.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
